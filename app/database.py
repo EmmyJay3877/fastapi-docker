@@ -14,7 +14,6 @@ DATABASE_NAME = settings.database_name
 
 # format for the connection sring
 SQLALCHEMY_DATABASE_URL = f'postgresql://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_HOSTNAME}:{DATABASE_PORT}/{DATABASE_NAME}'
-# SQLALCHEMY_DATABASE_URL = f'postgresql://postgres:password@db:5432/fastapi_test'
 
 # create engine, its respnsible for the connection of sqlalchemy to postgres
 # an engine which the session will use for connection resources
