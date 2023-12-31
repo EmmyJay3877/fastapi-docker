@@ -29,7 +29,7 @@ COPY . ./
 
 # COPY ./.env .env
 
-RUN rm -f alembic && \
+RUN rm -rf alembic && \
     alembic init alembic
 
 RUN rm -f alembic.ini && \
