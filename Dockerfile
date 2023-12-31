@@ -24,9 +24,10 @@ COPY requirements.txt .
 RUN pip3 install --no-cache-dir --upgrade -r /backend/requirements.txt
 
 # copy project
-COPY ./app /app
+COPY . ./
+# COPY ./app /app
 
-COPY ./.env .env
+# COPY ./.env .env
 
 RUN alembic init alembic
 
