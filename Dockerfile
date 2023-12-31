@@ -31,6 +31,9 @@ COPY . ./
 
 RUN alembic init alembic
 
+RUN rm -f alembic.ini && \
+    rm -f ./alembic/env.py
+
 COPY ./alembic/env.py ./alembic/env.py
 
 COPY alembic.ini alembic.ini

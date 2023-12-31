@@ -4,5 +4,4 @@ Dockerfile
 .gitignore
 docker-compose*
 env
-alembic*
 .vscode
