@@ -25,10 +25,9 @@ RUN pip3 install --no-cache-dir --upgrade -r /backend/requirements.txt
 
 # copy project
 COPY . ./
-# COPY ./app /app
 
-# COPY ./.env .env
-
+# remove old alembic directory 
+# and install new instance
 RUN rm -rf alembic && \
     alembic init alembic
 
